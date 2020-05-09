@@ -65,7 +65,7 @@ def generate_url(name_set, country, gender, age):
             except:
                 pass
     if status is False:
-        print("Invalid age parameter provided. Resorting to default")
+        print("Age parameter either not set or is invalid. Resorting to default")
         min_age = DEFAULTS["age"][0]
         max_age = DEFAULTS["age"][1]
 
