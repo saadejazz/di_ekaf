@@ -52,10 +52,13 @@ def generate_url(name_set, country, gender, age):
         gender = DEFAULTS["gender"]
     status = False
     if type(age) in [int, str] and age != "":
-        age = str(int(float(age)))
-        min_age = age
-        max_age = age
-        status = True
+        try:
+            age = str(int(float(age)))
+            min_age = age
+            max_age = age
+            status = True
+        except:
+            pass
     elif type(age) in [list, tuple]:
         if len(age) >= 2:
             try:
