@@ -20,9 +20,9 @@ Scrapes data from [Fake Name Generator](https://www.fakenamegenerator.com) corre
 ## Code 
 To generate a fake id, the following four attributes may be given:  
 1. **name_set** -- corresponds to the locality/root of random name generated. Examples include "Arabic", "American", "Persian", etc.  
-2. **country** -- corresponds to the location of the id which includes addresses, geo-coordinates, and phone number. Examples include "United Kingdom", "Germany", "Tunisia", etc.  
+2. **country** -- corresponds to the location of the id generated, which includes addresses, geo-coordinates, and phone number. Examples include "United Kingdom", "Germany", "Tunisia", etc.  
 3. **gender** -- provide either "Male" or "Female". Default randomly selects between the two.  
-4. **age** -- provided either an age number (in str format) or a tuple of ages: (min, max).  
+4. **age** -- provide either an age number (in str format) or a tuple of ages: (min, max).  
 
 **Note:** You can view all possible (and default) values of the above-mentioned attributes in *di_ekaf/data_dicts.py* 
 
